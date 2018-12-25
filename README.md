@@ -1,4 +1,4 @@
-#SAM - Simplified Augmented Markdown 
+# SAM - Simplified Augmented Markdown 
 
 ## Why?
 This is the most important question to answer. Why do we need another another simplified markup language. The reason was due to interoperabiltiy of different systems. I started working with HTML and TeX but never found a way to convert text from one format to the other. 
