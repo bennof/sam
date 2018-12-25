@@ -1,0 +1,2 @@
+# sam
+Simplified Augmented MarkDown
