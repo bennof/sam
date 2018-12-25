@@ -75,15 +75,15 @@ or blocks embedded in ` ``` ` elements.
 
 ### Syntax highlighting
 
-> Q: Is there syntax highlighting?
-> A: No. The creator (and) main users of Acme find syntax highlighting unhelpful and distracting.
+> Q: Is there syntax highlighting?  
+> A: No. The creator (and) main users of Acme find syntax highlighting unhelpful and distracting.  
 > [Rob Pike](http://acme.cat-v.org/faq)
 
 ### Tables
 Will be added soon (similar to GFM)
 
 ### Comments
-Comments will be enabled by \% like TeX or Erlang
+Comments will be enabled by `%` like TeX or Erlang
 
 ### Escape Char
 A escape char is needed to express differen sentences: `\`.
@@ -92,11 +92,12 @@ A escape char is needed to express differen sentences: `\`.
 ### Math
 I think a TeX/LaTeX like syntax works best, so MathJax will be used with HTML output:
 ```
-$f(x)=\Gamma(x)$
+The Gamma function is defined as ${\displaystyle \Gamma (z)=\int _{0}^{\infty }x^{z-1}e^{-x}\,dx}$.
 ```
 or block systax: 
 ```
-\psi ({\mathbf  {r}},t)=A\;\exp \left(-{\frac  {{\mathrm  {i}}}{\hbar }}\;(Et-{\mathbf  {p}}\cdot {\mathbf  {r}})\right)
+Schrödinger's equation:
+$$\psi ({\mathbf  {r}},t)=A\;\exp \left(-{\frac  {{\mathrm  {i}}}{\hbar }}\;(Et-{\mathbf  {p}}\cdot {\mathbf  {r}})\right)$$
 ```
 
 ### Dynamics
