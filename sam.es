@@ -55,8 +55,11 @@ main (_) ->
 
 % describing usage
 usage () -> 
-    io:format("SAM Erlang Parser Generator\n"),
-    io:format("usage: <mode> [args]\n"),
-    io:format("else this info is printed.\n"),
+    io:format("SAM Erlang Parser Generator~n"),
+    io:format("usage: <mode> [args]~n"),
+    io:format("       leex    [xrl-file]                   create erl-file from xrl-file using leex~n"),
+    io:format("       compile [erl-file]                   compile erl file to beam-file~n"),
+    io:format("       test    [xrl-file] [sam-file] [out]  test xrl-defintion on test-file and write to out~n"),
+    io:format("else this info is printed.~n"),
     halt(0).
 

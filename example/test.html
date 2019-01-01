@@ -4,51 +4,47 @@
 
 <!-- header [3]-->
 <h2> Why?</h2>
-<p>This is the most important question to answer. Why do we need another another simplified markup language. The reason was due to interoperabiltiy of different systems. I started working with HTML and TeX but never found a way to convert text from one format to the other. </p>
+<p>This is the most important question to answer. Why do we need another another simplified markup language. The reason was due to interoperability of different systems. I started working with HTML and TeX but never found a way to convert text from one format to the other. </p>
 
-<p>About 10 years ago I started writing a javascript implementation of TeX. After implementing a fixed subset for typesetting, it got complicated. In the same time I started to write a TeX system for education (based on plainTeX) because I was not satisfied with the output of Word, etc.. This made development of the javascript implementation more complicated and more ande more I had to handle style output to CSS. The way TeX and CSS handle style are different, especially due to the fact TeX is a complete programming language.</p>
+<p>About 10 years ago I started writing a JavaScript implementation of TeX. After implementing a fixed subset for typesetting, it got complicated. In the same time I started to write a TeX system for education (based on plain TeX) because I was not satisfied with the output of Word, etc.. This made development of the JavaScript implementation more complicated and more and more I had to handle style output to CSS. The way TeX and CSS handle style are different, especially due to the fact TeX is a complete programming language.</p>
 
-<p>Next Idea was to write a output driver for pdfTeX/TeX which is like shoting with cannons on pigeons (German saying). The most converters like tex2html use a direct translation system. This will cause problems, if you use non default (what ever this means) commands in TeX. </p>
+<p>Next Idea was to write a output driver for pdfTeX/TeX which is like shooting with cannons on pigeons (German saying). The most converters like tex2html use a direct translation system. This will cause problems, if you use non default (what ever this means) commands in TeX. </p>
 
 <p>Troff is another story ...</p>
 
-<p>So what I will try to do is to build a simple but powerfull and dynamic markdown language, using traditional techniques. </p>
+<p>So what I will try to do is to build a simple but powerful and dynamic markdown language, using traditional techniques. </p>
 <!-- unordered [13] -->
 <ul>
-<li>BNF Grammar (for yacc-like) for easy implementation in other languages</li>
+<li>BNF Grammar (for Yacc-like) for easy implementation in other languages</li>
 <li>clear syntax for plain text to read and to parse</li>
 <li>UTF-8 and URIs</li>
 <li>flow or stream based behavior on data includes </li>
-<li>support for tex math</li>
+<li>support for TeX math</li>
 <li>JSON data support</li>
-<li>output to html and tex (ps, pdf, ...)</li>
+<li>output to HTML and TeX (PS, PDF, ...)</li>
 <li>should produce acceptable Markdown output (like this file)</li>
 <li>output presentations</li>
 </ul>
 <!-- header [23]-->
 <h2> Elements</h2>
 <p>The plain text and readability will be improved by using mark down syntax:</p>
-<i>Examples are taken from [GitHub: Mastering Markdown](https://guides.github.com/features/mastering-markdown/)</i>
+<i>Examples are taken from <!-- marked [25]--><!-- Marked ](https://guides.github.com/features/mastering-markdown/) --><a href="https://guides.github.com/features/mastering-markdown/">GitHub: Mastering Markdown<!--end line: 25 last stack {mark_start,25,<0.82.0>}-->
+</a></i>
 
 <!-- header [27]-->
-<h3> Header</h3>
-<!-- code_block [28]-->
-<pre><code>```
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
-
-```</code></pre>
+<h3> Header </h3>
+<!-- code_block [28] Data=""-->
+<pre><code># This is an h1 tag
+## This is an h2 tag
+###### This is an h6 tag</code></pre>
 
 
 <!-- header [35]-->
 <h3> Emphasis</h3>
-<!-- code_block [36]-->
-<pre><code>```
-*This text will be italic*
+<!-- code_block [36] Data=""-->
+<pre><code>*This text will be italic*
 
-**This text will be bold**
-```</code></pre>
+**This text will be bold**</code></pre>
 
 
 <!-- header [42]-->
@@ -56,90 +52,93 @@
 
 <!-- header [44]-->
 <h4> Unordered</h4>
-<!-- code_block [45]-->
-<pre><code>```
-* Item 1
+<!-- code_block [45] Data=""-->
+<pre><code>* Item 1
 * Item 2
   * Item 2a
-  * Item 2b
-```</code></pre>
+  * Item 2b</code></pre>
 
 
 <!-- header [52]-->
 <h4> Ordered</h4>
-<!-- code_block [53]-->
-<pre><code>```
-1. Item 1
+<!-- code_block [53] Data=""-->
+<pre><code>1. Item 1
 1. Item 2
 1. Item 3
    1. Item 3a
-   1. Item 3b
-```</code></pre>
+   1. Item 3b</code></pre>
 
 
 <!-- header [61]-->
-<h3> Blockquotes</h3>
-<!-- code_block [62]-->
-<pre><code>```
-> We're living the future so
-> the present is our past.
-
-```</code></pre>
+<h3> Block quotes</h3>
+<!-- code_block [62] Data=""-->
+<pre><code>> We're living the future so
+> the present is our past.</code></pre>
 
 
 <!-- header [68]-->
 <h3> Code</h3>
-<!-- code_block [69]-->
-<pre><code>```
-I think you should use an
-`<addr>` element here instead.
-```</code></pre>
+<!-- code_block [69] Data=""-->
+<pre><code>I think you should use an
+`<addr>` element here instead.</code></pre>
 
 
-<p>or blocks embedded in <!-- code_inline [74]--><code>` ``` `</code> elements.</p>
+<p>or blocks embedded in <!-- code_inline [74]--><code> ``` </code> elements.</p>
 
 <!-- header [76]-->
 <h3> Syntax highlighting</h3>
 
-<p>> Q: Is there syntax highlighting?  </p>
-<p>> A: No. The creator (and) main users of Acme find syntax highlighting unhelpful and distracting.  </p>
-<p>> [Rob Pike](http://acme.cat-v.org/faq)</p>
-
+<!-- block [78]-->
+<blockquote>
+Q: Is there syntax highlighting?  <br />
+A: No. The creator (and) main users of Acme find syntax highlighting unhelpful and distracting.  <br />
+<!-- marked [80]--><!-- Marked ](http://acme.cat-v.org/faq) --><a href="http://acme.cat-v.org/faq">Rob Pike<!--end line: 80 last stack {mark_start,80,<0.82.0>}-->
+</a><br />
+</blockquote>
 <!-- header [82]-->
-<h3> Tables</h3>
-<p>Will be added soon (similar to GFM)</p>
+<h3> Tables (not working)</h3>
+<p>First Header | Second Header</p>
+<p>------------ | -------------</p>
+<p>Content from cell 1 | Content from cell 2</p>
+<p>Content in the first column | Content in the second column</p>
 
-<!-- header [85]-->
+<!-- code_block [88] Data=""-->
+<pre><code>GFM
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column</code></pre>
+
+
+<!-- header [95]-->
 <h3> Comments</h3>
-<p>Comments will be enabled by <!-- code_inline [86]--><code>`%`</code> like TeX or Erlang</p>
+<p>Comments will be enabled by <!-- code_inline [96]--><code>%</code> like TeX or Erlang</p>
 
-<!-- header [88]-->
+<!-- header [98]-->
 <h3> Escape Char</h3>
-<p>A escape char is needed to express differen sentences: <!-- code_inline [89]--><code>`\`</code>.</p>
+<p>A escape char is needed to express special symbols/characters: <!-- code_inline [99]--><code>\c</code>.</p>
 
 
-<!-- header [92]-->
+<!-- header [102]-->
 <h3> Math</h3>
-<p>I think a TeX/LaTeX like syntax works best, so MathJax will be used with HTML output:</p>
-<!-- code_block [94]-->
-<pre><code>```
-The Gamma function is defined as ${\displaystyle \Gamma (z)=\int _{0}^{\infty }x^{z-1}e^{-x}\,dx}$.
-```</code></pre>
+<p>I think a TeX/Latex like syntax works best, so Mathis's will be used with HTML output:</p>
+<!-- code_block [104] Data=""-->
+<pre><code>The Gamma function is defined as ${\displaystyle \Gamma (z)=\int _{0}^{\infty }x^{z-1}e^{-x}\,dx}$.</code></pre>
 
-<p>or block systax: </p>
-<!-- code_block [98]-->
-<pre><code>```
-Schrödinger's equation:
-$$\psi ({\mathbf  {r}},t)=A\;\exp \left(-{\frac  {{\mathrm  {i}}}{\hbar }}\;(Et-{\mathbf  {p}}\cdot {\mathbf  {r}})\right)$$
-```</code></pre>
+<p>The Gamma function is defined as <!-- math_inline [107]-->i${\displaystyle \Gamma (z)=\int _{0}^{\infty }x^{z-1}e^{-x}\,dx}$.</p>
+<p>or block syntax: </p>
+<!-- code_block [109] Data=""-->
+<pre><code>Schrödinger's equation:
+$$\psi ({\mathbf  {r}},t)=A\;\exp \left(-{\frac  {{\mathrm  {i}}}{\hbar }}\;(Et-{\mathbf  {p}}\cdot {\mathbf  {r}})\right)$$</code></pre>
 
 
-<!-- header [103]-->
+<!-- header [114]-->
 <h3> Dynamics</h3>
 <p>missing</p>
 
 
-
-<!-- header [108]-->
+<!-- header [118]-->
 <h2> BNF</h2>
+
+<p>The language is right now implemented in Erlang with leex (flex inspired) lexer and a top-down parser with a look-ahead of 1. To introduce dynamics intermediate tapes are introduced. </p>
 <!-- done. stack: {<0.82.0>,[]}-->
