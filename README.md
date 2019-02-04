@@ -100,7 +100,7 @@ A escape char is needed to express special symbols/characters: `\c`.
 
 
 ### Math
-I think a TeX/Latex like syntax works best, so Mathis's will be used with HTML output:
+I think a TeX/Latex like syntax works best, so Mathjs will be used with HTML output:
 ```
 The Gamma function is defined as ${\displaystyle \Gamma (z)=\int _{0}^{\infty }x^{z-1}e^{-x}\,dx}$.
 ```
