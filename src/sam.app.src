@@ -1,0 +1,15 @@
+{application, sam,
+ [{description, "Sam compiler library"},
+  {vsn, "0.1.1"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["MIT"]},
+  {links, []}
+ ]}.

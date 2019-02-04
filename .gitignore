@@ -2,3 +2,5 @@
 *.swp
 *.beam
 *.erl
+_build
+*.html
